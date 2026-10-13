@@ -1,21 +1,26 @@
-MIT License
+Copyright (c) 2026 Private Practice Collective LLC. All rights reserved.
 
-Copyright (c) 2026 Mintlify
+This repository contains the documentation for Private Practice OS ("PracticeOS"),
+published at docs.privatepracticeos.app.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+The documentation is made publicly available so that PracticeOS customers, their
+staff, and prospective customers can read it. You may view, print, and share
+links to these pages, and you may copy excerpts for your own internal use in
+operating a PracticeOS account.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+You may not, without written permission from Private Practice Collective LLC:
+republish, sell, or redistribute the documentation or substantial portions of
+it; create derivative documentation or training materials for other products or
+services; or use the PracticeOS name, logos, or branding.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+Product names, logos, and trademarks of third parties referenced in the
+documentation (for example Google, Meta, LinkedIn, and YouTube) belong to their
+respective owners and are used only to describe compatibility.
+
+The documentation is provided "as is", for general guidance, without warranty
+of any kind. It is not legal, compliance, or clinical advice.
+
+Supporting code in this repository (for example scripts/) is covered by the same
+terms.
+
+Permission requests: contact Private Practice Collective LLC.

@@ -1,33 +1,43 @@
-> **First-time setup**: Customize this file for your project. Prompt the user to customize this file for their project.
-> For Mintlify product knowledge (components, configuration, writing standards),
-> install the Mintlify skill: `npx skills add https://mintlify.com/docs`
+# PracticeOS Docs — agent instructions
 
-# Documentation project instructions
+Public help center for Private Practice OS, served by Mintlify at docs.privatepracticeos.app.
+Audience: practice owners and their staff. Mintlify deploys `main` to production automatically —
+**never push to `main` or merge a PR without Zack's explicit OK.** Work on a branch.
 
-## About this project
+## Structure
+- Pages are `.mdx` with YAML frontmatter. Navigation is maintained by hand in `docs.json`.
+- Every page in the repo must be in `docs.json` navigation; Mintlify publishes every page it can see.
+  Unfinished work goes in `drafts/` or `*.draft.mdx` (excluded by `.mintignore`).
+- Required frontmatter: `title`, `description`, `status` (`drafted` | `approved`), `source`
+  (where the steps were verified: session date/timestamp, live UI check date).
+- Retired URLs get a `redirects` entry in `docs.json`, never a dead link.
 
-- This is a documentation site built on [Mintlify](https://mintlify.com)
-- Pages are MDX files with YAML frontmatter
-- Configuration lives in `docs.json`
-- Use the Mintlify MCP server, `https://mcp.mintlify.com`, to edit content and settings via MCP
-- Use the Mintlify docs MCP server, `https://www.mintlify.com/docs/mcp`, to query information about using Mintlify via MCP
+## Publish standard
+- `drafted`: written from a cited source; not yet checked in the live product or not yet signed off.
+- `approved`: steps checked against the current product, zero `{/* VERIFY: ... */}` markers, Zack signed off.
+- Unconfirmed steps carry an MDX comment `{/* VERIFY: what to check */}` (not rendered).
+- `node scripts/check.mjs` during work; `node scripts/check.mjs release` must pass before merging to `main`.
 
 ## Terminology
-
-{/* Add product-specific terms and preferred usage */}
-{/* Example: Use "workspace" not "project", "member" not "user" */}
-
-## Style preferences
-
-{/* Add any project-specific style rules below */}
-
-- Use active voice and second person ("you")
-- Keep sentences concise — one idea per sentence
-- Use sentence case for headings
-- Bold for UI elements: Click **Settings**
-- Code formatting for file names, commands, paths, and code references
+- Product: "Private Practice OS" or "PracticeOS". Company: "Private Practice Collective".
+- Never "Private Practice CRM", never "PPC", never the underlying platform vendor's name.
 
 ## Content boundaries
+- No PHI, no real client or practice names, no identifying examples.
+- No unqualified "HIPAA-compliant"; no clinical-outcome claims; no hype words; no guarantees.
+- Never state subscription prices.
+- Hostnames: only those on the allowlist in `scripts/check.mjs`. The customer's own subdomains
+  (e.g. `pages.yourpractice.com`) are fine as examples.
+- Third-party screens (Meta, Google, registrars) change often — date-stamp those pages.
 
-{/* Define what should and shouldn't be documented */}
-{/* Example: Don't document internal admin features */}
+## Style
+- Second person, active voice, sentence-case headings, one idea per sentence.
+- Bold for UI labels exactly as they appear: **Settings → Billing**.
+- Use Mintlify components: `<Steps>`, `<Note>`, `<Warning>`, `<Tip>`, `<CardGroup>`.
+
+## Local preview
+    source ~/.nvm/nvm.sh && nvm use 24 && mint dev   # Node 24; Mintlify refuses Node 25
+
+## exFAT drive
+macOS writes `._*` files. Never commit them. If git reports "non-monotonic index":
+`find . -name '._*' -type f -delete` inside the repo.

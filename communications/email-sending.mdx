@@ -1,0 +1,34 @@
+---
+title: Set up your sending domain
+description: Send automated email from your own domain, with the records inbox providers require.
+status: drafted
+source: Live onboarding session (2026-09-14) 01:36:46–01:48:06
+---
+
+Automated emails — confirmations, reminders, follow-ups — send from a dedicated subdomain such as `lc.yourpractice.com`. Replies still go to your real inbox.
+
+## Before you begin
+
+- Your [domain is connected](/website-growth/website), or you have your registrar login ready
+
+## Set it up
+
+<Steps>
+  <Step title="Add the sending subdomain">
+    Add `lc.yourpractice.com` as your dedicated sending domain in PracticeOS. It shows you the DNS records to create.
+    {/* VERIFY: menu path and labels for the dedicated sending domain screen. */}
+  </Step>
+  <Step title="Create SPF, DKIM, and DMARC records">
+    Add each record at your registrar exactly as shown.
+  </Step>
+  <Step title="Check every record after saving">
+    Long records sometimes get cut off when pasted. Open each one after saving and compare it character for character.
+  </Step>
+  <Step title="Set your reply-to address">
+    Set the reply-to address to the inbox you actually read.
+  </Step>
+</Steps>
+
+<Warning>
+DMARC isn't optional. Major inbox providers reject or junk mail from domains without it.
+</Warning>

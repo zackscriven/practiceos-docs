@@ -1,0 +1,38 @@
+---
+title: Connect your domain
+description: Connect your domain so your landing pages and forms publish on your own address. Your existing website isn't affected.
+status: drafted
+source: Live onboarding session (2026-09-14) 00:53:18–00:59:14
+---
+
+Your domain is **connected**, not transferred. It stays with your current registrar, and your existing website keeps working exactly as it does now.
+
+## Before you begin
+
+- The login for your domain registrar
+- About 15 minutes; DNS changes can take a while to take effect
+
+## How it's set up
+
+Your pages publish on a subdomain — for example, `pages.yourpractice.com`. You add one record at your registrar that points that subdomain to PracticeOS.
+
+<Steps>
+  <Step title="Add the domain in PracticeOS">
+    Add `pages.yourpractice.com` as a domain in your account. PracticeOS shows you the record to create.
+    {/* VERIFY: menu path and button labels for adding a domain; the exact record value shown. */}
+  </Step>
+  <Step title="Create the record at your registrar">
+    At your registrar, add a CNAME record for `pages` with the value PracticeOS gave you. Every registrar's screens look different; look for "DNS" or "DNS records".
+  </Step>
+  <Step title="Verify">
+    Back in PracticeOS, verify the domain once the record is saved.
+  </Step>
+</Steps>
+
+## Why a general subdomain
+
+Use a general name like `pages.` rather than one named after a single offer. You'll publish more than one page over time, and they can all live on the same subdomain.
+
+## Linking pages to the domain
+
+A page is linked to your domain after the page exists. If you're setting up the domain before any pages are built, that's fine — the link is made later.
