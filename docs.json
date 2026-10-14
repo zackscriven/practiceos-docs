@@ -1,53 +1,112 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "name": "PracticeOS Docs",
+  "description": "Setup guides, everyday how-tos, and troubleshooting for Private Practice OS.",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#554861",
+    "light": "#C5AFD0",
+    "dark": "#554861"
   },
   "favicon": "/favicon.svg",
-  "navigation": {
-    "pages": [
-      {
-        "group": "Getting Started",
-        "pages": [
-          "index",
-          "quickstart"
-        ]
-      }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
-  },
   "logo": {
     "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "dark": "/logo/dark.svg",
+    "href": "/"
+  },
+  "fonts": {
+    "family": "Nunito"
+  },
+  "background": {
+    "color": {
+      "light": "#FFFFFF",
+      "dark": "#1C1523"
+    }
+  },
+  "navigation": {
+    "groups": [
+      {
+        "group": "Start here",
+        "icon": "flag",
+        "pages": [
+          "index",
+          "start-here/onboarding",
+          "start-here/getting-help"
+        ]
+      },
+      {
+        "group": "Use PracticeOS",
+        "icon": "compass",
+        "pages": [
+          "using-practiceos/home",
+          "using-practiceos/inbox",
+          "using-practiceos/inquiries",
+          "using-practiceos/contacts",
+          "using-practiceos/calendar"
+        ]
+      },
+      {
+        "group": "Set up your practice",
+        "icon": "gear",
+        "pages": [
+          "setup/sign-in"
+        ]
+      },
+      {
+        "group": "Connect your tools",
+        "icon": "plug",
+        "pages": [
+          "integrations/email",
+          "integrations/meta-facebook"
+        ]
+      },
+      {
+        "group": "Calendar and appointments",
+        "icon": "calendar",
+        "pages": [
+          "calendar/availability"
+        ]
+      },
+      {
+        "group": "Communication",
+        "icon": "message",
+        "pages": [
+          "communications/phone-sms",
+          "communications/email-sending"
+        ]
+      },
+      {
+        "group": "Website and growth",
+        "icon": "globe",
+        "pages": [
+          "website-growth/website",
+          "website-growth/marketing-integrations"
+        ]
+      },
+      {
+        "group": "Administration",
+        "icon": "wallet",
+        "pages": [
+          "administration/billing"
+        ]
+      },
+      {
+        "group": "Troubleshooting",
+        "icon": "wrench",
+        "pages": [
+          "troubleshooting/email-not-connected",
+          "troubleshooting/calendar-not-syncing",
+          "troubleshooting/booking-not-showing",
+          "troubleshooting/text-did-not-send"
+        ]
+      }
+    ]
   },
   "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:support@mintlify.com"
-      }
-    ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
+      "label": "Sign in",
+      "href": "https://my.privatepracticeos.app"
     }
   },
   "contextual": {
@@ -55,18 +114,80 @@
       "copy",
       "view",
       "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
+      "claude"
     ]
   },
   "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+    "socials": {}
+  },
+  "redirects": [
+    {
+      "source": "/start-here/welcome",
+      "destination": "/"
+    },
+    {
+      "source": "/start-here/first-30-minutes",
+      "destination": "/start-here/onboarding"
+    },
+    {
+      "source": "/integrations/google-calendar",
+      "destination": "/integrations/email"
+    },
+    {
+      "source": "/integrations/google-workspace",
+      "destination": "/integrations/email"
+    },
+    {
+      "source": "/integrations/choose-calendars",
+      "destination": "/calendar/availability"
+    },
+    {
+      "source": "/integrations/conflict-calendars",
+      "destination": "/calendar/availability"
+    },
+    {
+      "source": "/calendar/conflict-calendars",
+      "destination": "/calendar/availability"
+    },
+    {
+      "source": "/start-here/what-practiceos-does",
+      "destination": "/"
+    },
+    {
+      "source": "/troubleshooting/contact-support",
+      "destination": "/start-here/getting-help"
+    },
+    {
+      "source": "/communications/send-text",
+      "destination": "/using-practiceos/inbox"
+    },
+    {
+      "source": "/communications/send-email",
+      "destination": "/using-practiceos/inbox"
+    },
+    {
+      "source": "/inquiries/reply-to-inquiry",
+      "destination": "/using-practiceos/inbox"
+    },
+    {
+      "source": "/inquiries/how-inquiries-enter",
+      "destination": "/using-practiceos/inquiries"
+    },
+    {
+      "source": "/inquiries/inquiry-stages",
+      "destination": "/using-practiceos/inquiries"
+    },
+    {
+      "source": "/inquiries/follow-up",
+      "destination": "/using-practiceos/inquiries"
+    },
+    {
+      "source": "/calendar/booking-pages",
+      "destination": "/using-practiceos/calendar"
+    },
+    {
+      "source": "/calendar/appointment-types",
+      "destination": "/using-practiceos/calendar"
     }
-  }
+  ]
 }

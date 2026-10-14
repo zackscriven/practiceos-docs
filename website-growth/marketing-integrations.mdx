@@ -1,0 +1,40 @@
+---
+title: Tracking and marketing integrations
+description: Google Tag Manager, the Meta Pixel, and how tracking tells you which campaigns bring inquiries.
+status: drafted
+source: Live onboarding session (2026-09-14) 01:18:52–01:21:47, 02:13:13–02:15:38, 02:21:54
+---
+
+## How tracking fits together
+
+| Layer | What it tells you |
+| --- | --- |
+| **Pixel** | Someone viewed a page |
+| **Conversion events** | Someone took an action, such as submitting a form — sent to the ad platform |
+| **Campaign parameters (UTMs)** | Which campaign and ad the inquiry came from — recorded in PracticeOS |
+
+## Google Tag Manager and the Meta Pixel
+
+<Steps>
+  <Step title="One container per domain">
+    Use one Google Tag Manager container for each domain.
+  </Step>
+  <Step title="Add the Meta Pixel">
+    Add the Meta Pixel from the Tag Manager template gallery and set it to fire on **All Pages**.
+  </Step>
+  <Step title="Verify it fires">
+    Use a pixel-helper browser extension on your pages to confirm the pixel is firing.
+  </Step>
+  <Step title="Add the container to your PracticeOS pages">
+    Pages on your `pages.` subdomain don't inherit tags from your main website. Add the container code to them separately.
+    {/* VERIFY: where tracking code is added for funnel/site pages in PracticeOS. */}
+  </Step>
+</Steps>
+
+<Note>
+If you already use Tag Manager, send your container's head and body code to your onboarding contact by email.
+</Note>
+
+## Conversion events
+{/* VERIFY: location of the Conversion API / Facebook conversion settings screen — described on 2026-09-14 but not clicked through. Do not approve until walked. */}
+Conversion events are set up in PracticeOS after the pixel is working.
