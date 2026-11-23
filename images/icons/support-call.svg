@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" role="img" aria-label="PracticeOS support call">
+<defs>
+<radialGradient id="g" cx="78%" cy="10%" r="90%"><stop offset="0" stop-color="#3A2C48"/><stop offset="1" stop-color="#1C1523"/></radialGradient>
+<mask id="m" maskUnits="userSpaceOnUse" x="0" y="0" width="180" height="180"><rect width="180" height="180" fill="#000"/><path d="M54 46h72a16 16 0 0 1 16 16v44a16 16 0 0 1-16 16H92l-22 19c-2.500 2.100-6 .300-6-2.900V122H54a16 16 0 0 1-16-16V62a16 16 0 0 1 16-16z" fill="#fff"/><text x="90" y="107" text-anchor="middle" font-family="Arial Black, Helvetica, Arial, sans-serif" font-weight="900" font-size="64" fill="#000">?</text></mask>
+</defs>
+<rect width="180" height="180" fill="url(#g)"/>
+<rect x="13" y="13" width="154" height="154" rx="34" fill="none" stroke="#EFCB9D" stroke-width="4"/>
+<g mask="url(#m)">
+<rect x="20" y="46" width="140" height="31.7" fill="#EFCB9D"/>
+<rect x="20" y="81.7" width="140" height="24.6" fill="#A78BC8"/>
+<rect x="20" y="110.3" width="140" height="31.7" fill="#6B5A7A"/>
+</g>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 124" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="title desc">
+<title id="title">PracticeOS favicon</title>
+<desc id="desc">Simplified layer mark for favicon sizes: heavier layers, tighter frame, no fine detail.</desc>
+<rect width="124" height="124" rx="26" fill="#1C1523"></rect>
+<rect x="10" y="10" width="104" height="104" rx="20" fill="none" stroke="#EFCB9D" stroke-width="5"></rect>
+<rect x="30" y="76" width="64" height="15" rx="7.5" fill="#554861"></rect>
+<rect x="30" y="54.5" width="64" height="15" rx="7.5" fill="#A78BC8"></rect>
+<rect x="30" y="33" width="64" height="15" rx="7.5" fill="#EFCB9D"></rect>
+</svg>
