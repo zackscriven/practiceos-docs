@@ -1,0 +1,49 @@
+---
+title: "Connect your website"
+sidebarTitle: "Website and tracking"
+description: "Set up a landing-page subdomain and add the tracking script to your existing website."
+keywords: ["domain", "subdomain", "CNAME", "DNS", "tracking script", "Google Tag Manager", "funnels", "landing pages"]
+---
+
+There are two parts to connecting your website. You can do them in either order.
+
+## Set up a landing-page subdomain
+
+Landing pages and funnels built in PracticeOS live on a subdomain of your own domain, for example `pages.yourdomain.com`. A funnel works best for one specific offer to one specific audience, such as a lead magnet or an application to work with you, and it has conversion tracking built in.
+
+<Steps>
+  <Step title="Choose a subdomain">
+    We pick this with you on your onboarding call. `pages` is a common choice.
+  </Step>
+  <Step title="Add a CNAME record">
+    Sign in to your domain registrar or DNS provider and add a **CNAME** record. Use your subdomain (for example `pages`) as the host, and point it to the value we give you on the call.
+  </Step>
+  <Step title="Let us know">
+    Tell us when the record is saved so we can verify it. DNS changes can take a few minutes to appear.
+  </Step>
+</Steps>
+
+Your main website stays exactly where it is. Only the new subdomain points to PracticeOS.
+
+## Add the tracking script to your existing website
+
+We give you a short script during onboarding. Once it's on your site, PracticeOS records:
+
+- **Page views**, so you can see which contacts visited your site.
+- **Form submissions**, so someone who fills out a form on your existing website shows up in PracticeOS automatically.
+
+### Add it directly
+
+Paste the script on every page of your site, just before the closing `</body>` tag. Most website builders have a site-wide "footer code" or "custom code" setting for this.
+
+### Add it with Google Tag Manager
+
+If your site already uses Google Tag Manager, create a new **Custom HTML** tag, paste the script in, and set it to fire on all pages. Tag Manager becomes more useful as you add more tags later, such as a Meta Pixel.
+
+<Note>
+  The script works with standard HTML forms. If your forms are embedded in an iframe from another tool, they may need a different setup. [Ask us](/support) and we'll take a look.
+</Note>
+
+## What you can build next
+
+With your website connected, a form opt-in can start an automated follow-up, such as an email nurture sequence. Bring what you want to build to a [weekly growth call](/growth-system/calls-community).

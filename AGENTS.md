@@ -1,33 +1,27 @@
-> **First-time setup**: Customize this file for your project. Prompt the user to customize this file for their project.
-> For Mintlify product knowledge (components, configuration, writing standards),
-> install the Mintlify skill: `npx skills add https://mintlify.com/docs`
-
 # Documentation project instructions
 
 ## About this project
 
-- This is a documentation site built on [Mintlify](https://mintlify.com)
-- Pages are MDX files with YAML frontmatter
-- Configuration lives in `docs.json`
-- Use the Mintlify MCP server, `https://mcp.mintlify.com`, to edit content and settings via MCP
-- Use the Mintlify docs MCP server, `https://www.mintlify.com/docs/mcp`, to query information about using Mintlify via MCP
+- PracticeOS Docs, published at https://docs.privatepracticeos.app, built on [Mintlify](https://mintlify.com)
+- Pages are MDX files with YAML frontmatter; configuration lives in `docs.json`
+- The audience is practice owners and their staff, not developers
+- Keep it small: two tracks, Growth System and Content Engine. Add a page only when a client question needs one
 
 ## Terminology
 
-{/* Add product-specific terms and preferred usage */}
-{/* Example: Use "workspace" not "project", "member" not "user" */}
+- The product is **Private Practice OS**; **PracticeOS** is the short form used throughout these docs
+- The app is at `my.privatepracticeos.app`
+- Never write "Private Practice CRM" (retired name) or "PPC" (internal shorthand)
 
 ## Style preferences
 
-{/* Add any project-specific style rules below */}
-
-- Use active voice and second person ("you")
-- Keep sentences concise — one idea per sentence
-- Use sentence case for headings
+- Calm, practical, plain language. Second person, active voice
 - Bold for UI elements: Click **Settings**
-- Code formatting for file names, commands, paths, and code references
+- No hype words ("revolutionary", "disruptive")
 
 ## Content boundaries
 
-{/* Define what should and shouldn't be documented */}
-{/* Example: Don't document internal admin features */}
+- Do not invent UI steps. A page that has not been checked against the current app keeps its "being written" note
+- No clinical outcome claims
+- Do not describe the product as "HIPAA-compliant"
+- No client names, client data or screenshots containing client data
