@@ -57,6 +57,13 @@
         ]
       },
       {
+        "group": "Whop",
+        "pages": [
+          "whop/membership",
+          "whop/sell-on-whop"
+        ]
+      },
+      {
         "group": "Help",
         "pages": [
           "support"
